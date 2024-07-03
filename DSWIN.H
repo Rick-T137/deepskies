@@ -1,0 +1,14 @@
+/* STATIC DEFINED VALUES */
+#define MENU_NEW    1000
+#define MENU_OPEN   1001
+#define MENU_SAVE   1002
+#define MENU_SAVEAS 1003
+#define MENU_PRINT  1004
+#define MENU_EXIT   1005
+#define MENU_GOTO   2000
+#define MENU_FIND   2001
+#define MENU_CLINES 3000
+#define MENU_LDEF   4000
+#define MENU_SDEF   4001
+#define MENU_ABOUT  5099
+

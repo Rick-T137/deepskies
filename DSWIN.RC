@@ -1,0 +1,37 @@
+#include "windows.h"
+#include "dswin.h"
+
+DSICON  ICON    dswin.ico
+
+DSMENU MENU
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "New",     MENU_NEW
+        MENUITEM "Open",    MENU_OPEN
+        MENUITEM "Save",    MENU_SAVE
+        MENUITEM "Save As", MENU_SAVEAS
+        MENUITEM "Print",   MENU_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",    MENU_EXIT
+    END
+    POPUP "Edit"
+    BEGIN
+        MENUITEM "GoTo",    MENU_GOTO
+        MENUITEM "Find",    MENU_FIND
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Contellation Lines",  MENU_CLINES
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Load Defaults",       MENU_LDEF
+        MENUITEM "Save Defaults",       MENU_SDEF
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About"    MENU_ABOUT
+    END
+END
+

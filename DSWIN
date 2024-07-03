@@ -1,0 +1,9 @@
+dswin.obj: dswin.c dswin.h
+    cl -d -c -AH -Gsw -Oas -Zpe -FPa -Fodswin.obj dswin.c
+
+dswin.res: dswin.rc dswin.ico dswin.h
+    rc -r dswin.rc
+
+dswin.exe: dswin.obj dswin.def dswin.res
+    link4 dswin,dswin/align:16,dswin/map,llibw,dswin.def
+    rc dswin.res dswin.exe
